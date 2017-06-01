@@ -1,0 +1,12 @@
+package cn.itcast_03;
+/*
+ * 模拟登陆给三次机会，并提示还有几次
+ * */
+public class LoginString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,12 @@
+package cn.itcast_01;
+
+public class StudentTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+         Student st = new Student();
+         int h1 = st.hashCode();
+         System.out.println(h1);
+	}
+
+}

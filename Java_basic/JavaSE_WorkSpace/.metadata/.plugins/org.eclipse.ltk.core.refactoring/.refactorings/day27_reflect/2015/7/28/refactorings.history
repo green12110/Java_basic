@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;cn.refect_main&apos; to &apos;cn.reflect_main&apos;&#x0D;&#x0A;- Original project: &apos;day27_reflect&apos;&#x0D;&#x0A;- Original element: &apos;day27_reflect/src/cn.refect_main&apos;&#x0D;&#x0A;- Renamed element: &apos;day27_reflect/src/cn.reflect_main&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;cn.refect_main&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;cn.refect_main" name="cn.reflect_main" qualified="false" references="true" stamp="1436063565484" textual="false" version="1.0"/>
+</session>

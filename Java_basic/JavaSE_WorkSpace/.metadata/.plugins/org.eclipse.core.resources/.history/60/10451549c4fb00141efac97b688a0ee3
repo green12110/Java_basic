@@ -1,0 +1,13 @@
+package cn.itcast_02;
+/*
+ * 统计一个字符串中大写字母字符，小写字母字符，数字字符出现的次数。(不考虑其他字符)
+ */
+
+public class CharacterTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

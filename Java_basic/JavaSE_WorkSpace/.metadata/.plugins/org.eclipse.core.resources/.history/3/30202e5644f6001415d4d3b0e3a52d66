@@ -1,0 +1,29 @@
+package cn.itcast_03;
+
+import java.util.Scanner;
+
+/*
+ * 猜数字小游戏
+ * */
+public class GamePlay {
+	private GamePlay() {}
+    public static void start(){
+    	int num = 77;
+    	
+    	while(true){
+    		Scanner sc = new Scanner(System.in);
+    		System.out.println("请输入一个数字");
+    		int n = sc.nextInt();
+    		if(n == num){
+    			System.out.println("恭喜你猜中了");
+    		}else if(n>num){
+    			System.out.println("你猜的数字大了");
+    		} else {
+    			System.out.println("你猜的数字小了");
+    		}
+    		
+    		
+    	}
+    	
+    }
+}

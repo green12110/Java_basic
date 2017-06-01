@@ -1,0 +1,20 @@
+package UDPReviceDemo;
+
+import java.net.DatagramSocket;
+import java.net.SocketException;
+
+public class UDPReviceDemo {
+	
+	public static void main(String[] args) throws SocketException {
+		//创建Socket对象
+		DatagramSocket ds = new DatagramSocket(12345);
+		
+		DatagramPacket dp = new DatagramPacket();
+		//接收数据
+		ds.receive(dp);
+		
+		//释放资源
+		ds.close();
+	}
+
+}

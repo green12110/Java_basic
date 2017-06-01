@@ -1,0 +1,13 @@
+package UDPReviceDemo;
+
+import java.net.DatagramSocket;
+
+public class UDPReviceDemo {
+	
+	public static void main(String[] args) {
+		//创建Socket对象
+		DatagramSocket ds = new DatagramSocket(12345);
+		
+	}
+
+}

@@ -1,0 +1,17 @@
+package cn.itcast_02;
+/*
+ * 统计一个字符串中大写字母字符，小写字母字符，数字字符出现的次数。(不考虑其他字符)
+ * 
+ * 分析1、将字符串转成一个字符数组
+ *   2、遍历字符数组
+ *   3、定义三个变量，用于统计出现大写字符、小写字符、数字字符的个数
+ */
+
+public class CharacterTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

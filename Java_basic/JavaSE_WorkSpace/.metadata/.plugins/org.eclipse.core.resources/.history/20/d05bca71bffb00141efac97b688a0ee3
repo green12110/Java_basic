@@ -1,0 +1,24 @@
+package cn.itcast_02;
+
+/*
+ * public static boolean isUpperCase(char ch)
+ * public static boolean isLowerCase(char ch)
+ * public static boolean isDigit(char ch)
+ * public static char toUpperCase(char ch)
+ * public static char toLowerCase(char ch)
+ */
+
+public class CharacterDemo2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      Character ch1 = 'a';
+      Character ch2 = 'A';
+      
+      //判断给出的字符是否是大写字符
+      System.out.println(Character.isUpperCase('A'));
+      System.out.println(Character.isUpperCase('a'));
+      
+	}
+
+}

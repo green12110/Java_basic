@@ -1,0 +1,10 @@
+package cn.itcast_02;
+
+public class CharacterTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

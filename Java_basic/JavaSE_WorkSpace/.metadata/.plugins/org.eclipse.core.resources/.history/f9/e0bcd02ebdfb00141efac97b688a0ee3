@@ -1,0 +1,21 @@
+package cn.itcast_02;
+
+/*
+ * Charactor 
+ * 构造方法
+ * public Charactor(char value)
+ */
+
+public class CharactorDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Character ch = new Character('r');
+		System.out.println(ch);
+		
+		//Character ch2 = new Character(98); 错误
+
+	}
+
+}

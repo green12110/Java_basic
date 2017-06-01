@@ -1,0 +1,19 @@
+package thread_07;
+
+public class SellTicket implements Runnable {
+	// 定义100张票
+	// private int tickets = 100;
+	// 为了让多个线程对象共享这100张票，我们其实应该用静态修饰
+	private static int tickets = 100;
+
+	// 售票
+	public void run() {
+		// TODO Auto-generated method stub
+         while(true){
+        	 if(tickets>0){
+        		 System.out.println(Thread.currentThread().getName()+":\t正在售出第" +tickets+"张票");
+        	 }
+        	 
+         }
+	}
+}

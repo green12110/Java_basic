@@ -1,0 +1,18 @@
+package cn.itcast_01;
+/*
+ * public final Class<?> getClass()
+ * public int hashCode()
+ */
+public class StudentTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+         Student st = new Student();
+         int h1 = st.hashCode();
+         System.out.println(h1);
+         Student st2 = new Student();
+         int h2 = st2.hashCode();
+         System.out.println(h2);
+	}
+
+}

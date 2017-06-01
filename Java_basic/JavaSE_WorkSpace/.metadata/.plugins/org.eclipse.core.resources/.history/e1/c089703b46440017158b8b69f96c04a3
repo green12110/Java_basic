@@ -1,0 +1,11 @@
+package cn.itcast_01;
+
+import java.net.InetAddress;
+
+public class InetAddressDemo {
+	
+	public static void main(String[] args) {
+		InetAddress address = InetAddress.getByName("");
+	}
+
+}

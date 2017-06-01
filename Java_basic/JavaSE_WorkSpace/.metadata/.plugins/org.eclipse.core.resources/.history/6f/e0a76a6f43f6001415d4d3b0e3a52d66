@@ -1,0 +1,10 @@
+package cn.itcast_03;
+/*
+ * ²ÂÊı×ÖĞ¡ÓÎÏ·
+ * */
+public class GamePlay {
+    public static void start(){
+    	int num = 77;
+    	
+    }
+}

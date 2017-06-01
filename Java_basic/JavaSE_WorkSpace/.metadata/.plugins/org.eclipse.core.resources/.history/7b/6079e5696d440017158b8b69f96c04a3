@@ -1,0 +1,13 @@
+package cn.itcast_02;
+
+import java.net.DatagramSocket;
+import java.net.SocketException;
+
+public class UDPSendDemo {
+	
+	public static void main(String[] args) throws SocketException {
+		// 创建Socket对象
+		DatagramSocket ds = new DatagramSocket();
+	}
+
+}

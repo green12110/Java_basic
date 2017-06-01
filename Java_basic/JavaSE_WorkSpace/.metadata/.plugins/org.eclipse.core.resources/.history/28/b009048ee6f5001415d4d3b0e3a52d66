@@ -1,0 +1,44 @@
+package cn.itcast_01;
+
+public class Student extends Object {
+	private String name;
+	private int age;
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	@Override
+	public String toString() {
+		return "Student [name=" + name + ", age=" + age + "]";
+	}
+	
+	
+	//重写toString方法，返回该类所有成员变量的值
+	/*public String toString(){
+		return "姓名:"+name+"年龄"+age;
+	}
+   */
+	
+	public boolean equals(Object obj){
+		Student st = (Student)obj;
+		boolean flag;
+		if(this.name == st.name && this.age == st.age){
+			flag = true;
+		}
+	}
+	
+	
+}

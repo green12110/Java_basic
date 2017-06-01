@@ -1,0 +1,21 @@
+package cn.itcast_02;
+
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+import java.net.SocketException;
+
+public class UDPSendDemo {
+	
+	public static void main(String[] args) throws SocketException {
+		// 创建Socket对象
+		DatagramSocket ds = new DatagramSocket();
+		
+		//创建数据，并打包
+		DatagramPacket dp = new DatagramPacket();
+		//用Socket对象的发送方法，发送数据
+		ds.send(p);
+		//释放资源
+		ds.close();
+	}
+
+}
