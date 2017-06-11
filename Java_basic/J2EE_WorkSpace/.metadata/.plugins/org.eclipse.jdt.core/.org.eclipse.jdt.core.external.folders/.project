@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>.org.eclipse.jdt.core.external.folders</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>.link2</name>
+			<type>2</type>
+			<location>F:/02doc/struts2/struts-2.1.8.1-all/struts-2.1.8.1/src/core/src/main</location>
+		</link>
+		<link>
+			<name>.link3</name>
+			<type>2</type>
+			<location>F:/02doc/struts2/xwork-assembly-2.1.6-all/xwork-2.1.6/core/src/main</location>
+		</link>
+	</linkedResources>
+</projectDescription>

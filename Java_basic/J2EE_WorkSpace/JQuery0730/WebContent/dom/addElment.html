@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript" src="../jquery/jquery-1.7.2.js"></script>
+</head>
+<body>
+				
+		 <ul id="city">
+		 	 <li id="bj" name="beijing">北京</li>
+		 </ul>
+		
+	</body>
+	<script type="text/javascript">
+	 // 获取属性  attr() 方法
+	 alert($("#bj").attr("name"));
+	 // 在city下增加<li id="tj" name="tianjin">天津</li>节点
+	 // 创建li对象
+	 var $element = $("<li></li>");
+	 //设置li的属性 attr()方法重载
+	 $element.attr("id","tj");
+	 $element.attr("name","tianjin");
+	 //添加文本节点
+	 $element.text("天津");
+	 //添加到city下
+	 $("#city").append($element);
+	
+	</script>
+</html>

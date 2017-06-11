@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+		 	div,span{
+			    width: 140px;
+			    height: 140px;
+			    margin: 20px;
+			    background: #9999CC;
+			    border: #000 1px solid;
+				float:left;
+			    font-size: 17px;
+			    font-family:Roman;
+			}
+			
+			div.mini{
+			    width: 30px;
+			    height: 30px;
+			    background: #CC66FF;
+			    border: #000 1px solid;
+			    font-size: 12px;
+			    font-family:Roman;
+			}
+	 </style>
+	 <script type="text/javascript" src="../jquery/jquery-1.7.2.js"></script>
+</head>
+<body>
+		
+		 <input type="button" value="保存"  class="mini" name="ok"  class="mini" />
+		 <input type="button" value=" 改变第一个 div 元素的背景色为 #0000FF"  id="b1"/>
+		 <input type="button" value=" 改变最后一个 div 元素的背景色为 #0000FF"  id="b2"/>
+		 <input type="button" value=" 改变class不为 one 的所有 div 元素的背景色为 #0000FF"  id="b3"/>
+		 <input type="button" value=" 改变索引值为偶数的 div 元素的背景色为 #0000FF"  id="b4"/>
+		 <input type="button" value=" 改变索引值为奇数的 div 元素的背景色为 #0000FF"  id="b5"/>
+		 <input type="button" value=" 改变索引值为大于 3 的 div 元素的背景色为 #0000FF"  id="b6"/>
+		 <input type="button" value=" 改变索引值为等于 3 的 div 元素的背景色为 #0000FF"  id="b7"/>
+		 <input type="button" value=" 改变索引值为小于 3 的 div 元素的背景色为 #0000FF"  id="b8"/>
+		 <input type="button" value=" 改变所有的标题元素的背景色为 #0000FF"  id="b9"/>
+		 <input type="button" value=" 改变当前正在执行动画的所有元素的背景色为 #0000FF"  id="b10"/>
+				
+ 
+		 <h1>天气冷了</h1>
+		 <h2>天气又冷了</h2>
+		 
+	     <div id="one">
+	    	 id为one  
+		     
+		 </div>
+		
+		 <div id="two" class="mini" >
+	    	   id为two   class是 mini 
+		       <div  class="mini" >class是 mini</div>
+		</div>
+		
+		 <div class="one" >
+		 	    class是 one 
+		       <div  class="mini" >class是 mini</div>
+			   <div  class="mini" >class是 mini</div>
+		 </div>
+		 <div class="one" >
+		 	  class是 one 
+		       <div  class="mini01" >class是 mini01</div>
+			   <div  class="mini" >class是 mini</div>
+		</div>
+		
+		<br>
+			<div id="mover" >
+			 	  动画
+			</div>
+		<br>
+		
+
+</body>
+<script type="text/javascript">
+//<input type="button" value=" 改变第一个 div 元素的背景色为 #0000FF"  id="b1"/>
+$("#b1").click(function(){
+	// :first  用法 $(”tr:first”)
+	$("div:first").css("background","#0000FF");
+});
+
+//<input type="button" value=" 改变最后一个 div 元素的背景色为 #0000FF"  id="b2"/>
+$("#b2").click(function(){
+	//:last 用法$(”tr:last”)
+    $("div:last").css("background","#0000FF");
+});
+
+//<input type="button" value=" 改变class不为 one 的所有 div 元素的背景色为 #0000FF"  id="b3"/>
+$("#b3").click(function(){
+      //:not(selector) 用法$(”input:not(:checked)”)
+      $("div:not(.one)").css("background","#0000FF");
+});
+
+//<input type="button" value=" 改变索引值为偶数的 div 元素的背景色为 #0000FF"  id="b4"/>
+$("#b4").click(function(){
+	//:even 用法$(”tr:even”)
+	$("div:even").css("background","#0000FF");
+});
+
+//<input type="button" value=" 改变索引值为奇数的 div 元素的背景色为 #0000FF"  id="b5"/>
+$("#b5").click(function(){
+	//:odd 用法$("tr:odd")
+	$("div:odd").css("background","#0000FF");
+});
+
+//<input type="button" value=" 改变索引值为大于 3 的 div 元素的背景色为 #0000FF"  id="b6"/>
+$("#b6").click(function(){
+	//:gt(index) 用法 $(”tr:gt(0)”)
+    $("div:gt(3)").css("background","#0000FF");
+});
+
+//<input type="button" value=" 改变索引值为等于 3 的 div 元素的背景色为 #0000FF"  id="b7"/>
+$("#b7").click(function(){
+	//:eq(index) 用法 $(”tr:eq(0)”)
+    $("div:eq(3)").css("background","#0000FF");
+});
+
+
+//<input type="button" value=" 改变索引值为小于 3 的 div 元素的背景色为 #0000FF"  id="b8"/>
+$("#b8").click(function(){
+	//:lt(index) 用法 $("tr:lt(5)")
+	$("div:lt(3)").css("background","#0000FF");
+});
+
+
+//<input type="button" value=" 改变所有的标题元素的背景色为 #0000FF"  id="b9"/>
+function ca(){
+ 	$("#mover").slideToggle("fast",ca);
+ }
+ 
+ ca();
+
+$("#b9").click(function(){
+	//:header(固定写法)   匹配如 h1, h2, h3之类的标题元素
+	$(":header").css("background","#0000FF");
+	
+});
+
+//<input type="button" value=" 改变当前正在执行动画的所有元素的背景色为 #0000FF"  id="b10"/>
+$("#b10").click(function(){
+	//:animated(固定写法)    匹配所有正在执行动画效果的元素
+	$(":animated").css("background","#0000FF");
+});
+
+</script>
+</html>

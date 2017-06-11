@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+    version="2.0">
+
+    <tlib-version>1.0</tlib-version>
+    <short-name>itcast</short-name>
+    <uri>http://www.itcast.cn</uri>
+ 
+    <tag>
+        <name>viewIP</name>
+        <tag-class>cn.web.tag.MyTag</tag-class>
+        <body-content>empty</body-content>
+    </tag>
+    
+     <tag>
+        <name>output</name>
+        <tag-class>cn.web.tag.OutputTag</tag-class>
+        <body-content>JSP</body-content>
+    </tag>
+    
+     <tag>
+        <name>outPage</name>
+        <tag-class>cn.web.tag.OutPage</tag-class>
+        <body-content>empty</body-content>
+    </tag>
+    
+    <tag>
+      <name>XunHuan</name>
+      <tag-class>cn.web.tag.XunHuanTag</tag-class>
+      <body-content>JSP</body-content>
+    </tag>
+    
+     <tag>
+      <name>UpperCase</name>
+      <tag-class>cn.web.tag.UpperCaseTag</tag-class>
+      <body-content>JSP</body-content>
+    </tag>
+</taglib>

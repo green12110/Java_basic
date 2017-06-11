@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+		 	div,span{
+			    width: 140px;
+			    height: 140px;
+			    margin: 20px;
+			    background: #9999CC;
+			    border: #000 1px solid;
+				float:left;
+			    font-size: 17px;
+			    font-family:Roman;
+			}
+			
+			div.mini{
+			    width: 30px;
+			    height: 30px;
+			    background: #CC66FF;
+			    border: #000 1px solid;
+			    font-size: 12px;
+			    font-family:Roman;
+			}
+			
+			div.visible{
+				display:none;
+			}
+	 </style>
+	 <!--引入jquery的js库-->
+	 <script type="text/javascript" src="../jquery/jquery-1.7.2.js"></script>
+	</head>
+	<body>
+		<button>保存</button>	
+		<br>	<br>	<br>	
+	    <p>段落</p>
+	</body>
+	<script type="text/javascript">
+	/*
+	   clone(): 克隆匹配的 DOM 元素, 返回值为克隆后的副本. 但此时复制的新节点不具有任何行为.
+	   clone(true): 复制元素的同时也复制元素中的的事件 
+	*/
+	// 克隆button 追加到p上 ,但事件不克隆
+	// 为button增加事件
+	$("button").click(function(){
+		alert("dfdfdf");
+	});
+	$("button").clone(true).appendTo($("p"));
+	//$("button").clone().appendTo($("p"));
+	
+
+	</script>
+</html>

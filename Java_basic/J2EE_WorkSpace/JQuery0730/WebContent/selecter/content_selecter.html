@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+		 	div,span{
+			    width: 140px;
+			    height: 140px;
+			    margin: 20px;
+			    background: #9999CC;
+			    border: #000 1px solid;
+				float:left;
+			    font-size: 17px;
+			    font-family:Roman;
+			}
+			
+			div.mini{
+			    width: 30px;
+			    height: 30px;
+			    background: #CC66FF;
+			    border: #000 1px solid;
+			    font-size: 12px;
+			    font-family:Roman;
+			}
+	 </style>
+	<!--  引入jquery -->
+	<script type="text/javascript" src="../jquery/jquery-1.7.2.js"></script>
+</head>
+<body>
+         <input type="button" value="保存"  class="mini" name="ok"  class="mini" />
+		 <input type="button" value="改变 <body> 内所有 <div> 的背景色为 #0000FF"  id="b1"/>
+		 <input type="button" value=" 改变 <body> 内子 <div> 的背景色为 #FF0033"  id="b2"/>
+		 <input type="button" value=" 改变 id 为 one 的下一个 <div> 的背景色为 #0000FF"  id="b3"/>
+		 <input type="button" value=" 改变 id 为 two 的元素后面的所有兄弟<div>的元素的背景色为 # #0000FF"  id="b4"/>
+		 <input type="button" value=" 改变 id 为 two 的元素所有 <div> 兄弟元素的背景色为 #0000FF"  id="b5"/>
+		 <h1>天气冷了</h1>
+		 <h2>天气又冷了</h2>
+		 
+	     <div id="one">
+	    	 id为one  
+		     
+		 </div>
+		
+		 <div id="two" class="mini" >
+	    	   id为two   class是 mini 
+		       <div  class="mini" >class是 mini</div>
+		</div>
+		
+		 <div class="one" >
+		 	    class是 one 
+		       <div  class="mini" >class是 mini</div>
+			   <div  class="mini" >class是 mini</div>
+		 </div>
+		 <div class="one" >
+		 	  class是 one 
+		       <div  class="mini01" >class是 mini01</div>
+			   <div  class="mini" >class是 mini</div>
+		</div>
+		<br>
+		<div id="mover" >
+		 	  动画
+		</div>
+		<br>
+		<span class="spanone">    span
+		</span>
+		<span class="mini">    span
+		</span>
+
+</body>
+<script type="text/javascript">
+
+//<input type="button" value="改变 <body> 内所有 <div> 的背景色为 #0000FF"  id="b1"/>
+  $("#b1").click(function(){
+	  // 用法: $(”form input”) ancestor descendant
+	  $("body div").css("background","#0000FF");
+  });
+
+//<input type="button" value=" 改变 <body> 内子 <div> 的背景色为 #FF0033"  id="b2"/>
+   $("#b2").click(function(){
+	   //用法: $(”form > input”) ; parent > child
+	   $("body>div").css("background","#FF0033");
+   });
+
+//<input type="button" value=" 改变 id 为 one 的下一个 <div> 的背景色为 #0000FF"  id="b3"/>
+   $("#b3").click(function(){
+	   //用法: $(”label + input”) ; prev + next
+	   $("#one+div").css("background","#0000FF");
+   });
+
+//<input type="button" value=" 改变 id 为 two 的元素后面的所有兄弟<div>的元素的背景色为 # #0000FF"  id="b4"/>
+    $("#b4").click(function(){
+    	// 用法: $(”form ~ input”); prev ~ siblings 不包括prev
+    	$("#two ~ div").css("background"," #0000FF");
+    });
+
+//<input type="button" value=" 改变 id 为 two 的元素所有 <div> 兄弟元素的背景色为 #0000FF"  id="b5"/>
+    $("#b5").click(function(){
+    	//方法 siblings() 与前后位置无关, 只要是同辈节点就可以选取
+    	$("#two").siblings("div").css("background","#0000FF");
+    });
+
+</script>
+</html>

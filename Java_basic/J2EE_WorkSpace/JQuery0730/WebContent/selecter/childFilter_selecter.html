@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+div, span {
+	width: 140px;
+	height: 140px;
+	margin: 20px;
+	background: #9999CC;
+	border: #000 1px solid;
+	float: left;
+	font-size: 17px;
+	font-family: Roman;
+}
+
+div.mini {
+	width: 30px;
+	height: 30px;
+	background: #CC66FF;
+	border: #000 1px solid;
+	font-size: 12px;
+	font-family: Roman;
+}
+
+div.visible {
+	display: none;
+}
+</style>
+<script type="text/javascript" src="../jquery/jquery-1.7.2.js"></script>
+</head>
+<body>
+         <input type="button" value="保存"  class="mini" name="ok"  class="mini" />
+		 <input type="button" value=" 每个class为one的div父元素下的第2个子元素"  id="b1"/>
+		 <input type="button" value=" 每个class为one的div父元素下的第一个子元素"  id="b2"/>
+		 <input type="button" value=" 每个class为one的div父元素下的最后一个子元素"  id="b3"/>
+		 <input type="button" value=" 如果class为one的div父元素下的仅仅只有一个子元素，那么选中这个子元素"  id="b4"/>		 
+
+		 <!--文本隐藏域-->
+         <input type="hidden" value="hidden_1">
+		 <input type="hidden" value="hidden_2">
+		 <input type="hidden" value="hidden_3">
+		 <input type="hidden" value="hidden_4">
+		 
+		 <h1>天气冷了</h1>
+		 <h2>天气又冷了</h2>
+		 
+	     <div id="one">
+	    	 id为one   div
+		     
+		 </div>
+		
+		 <div id="one" class="mini"  title="test">
+	    	   id为two   class是 mini  div  title="test"
+		       <div  class="mini" >class是 mini</div>
+		</div>
+		 <div class="one"  title="test">
+		       <div  class="mini" >class是 mini******</div>
+		</div>
+		
+		 <div class="visible" >
+		 	    class是 one 
+		       <div  class="mini" >class是 mini</div>
+			   <div  class="mini" >class是 mini</div>
+		 </div>
+		 <div class="one" title="test02">
+		 	  class是 one    title="test02"   (**************
+		       <div  class="mini01" >class是 mini01</div>
+			   <div  class="mini" >cdddddddlass是 mini</div>
+		</div>
+		
+		
+		<div class="visible" >
+		 	  这是隐藏的
+		</div>
+		
+		<div class="one">
+			
+			
+		</div>
+		<br>
+		<div id="mover" >
+		 	  动画
+		</div>
+		<br>
+</body>
+<script type="text/javascript">
+/*
+ *  子元素过滤器选择器 
+ *  使用子元素过滤器选择器,要加空格
+ */
+//<input type="button" value=" 每个class为one的div父元素下的第2个子元素"  id="b1"/>
+  $("#b1").click(function(){
+	  /* 
+	    :nth-child(index/even/odd/equation)
+	           匹配其父元素下的第N个子或奇偶元素
+	  */
+	  $("div[class='one'] :nth-child(2)").css("background","red");
+  });
+//<input type="button" value=" 每个class为one的div父元素下的第一个子元素"  id="b2"/>
+  $("#b2").click(function(){
+	  // :first-child   只匹配一个元素,而此选择符将为每个父元素匹配一个子元素.
+	  $("div[class='one'] > :first-child").css("background","red");
+	
+  });
+//<input type="button" value=" 每个class为one的div父元素下的最后一个子元素"  id="b3"/>
+   $("#b3").click(function(){
+	   // :last-child  匹配最后一个子元素
+	   $("div[class='one'] > :last-child").css("background","red");
+   });
+//<input type="button" value=" 如果class为one的div父元素下的仅仅只有一个子元素，那么选中这个子元素"  id="b4"/>
+   $("#b4").click(function(){
+	   //: only-child 如果某个元素是父元素中唯一的子元素,那将会被匹配
+	   $("div[class='one'] :only-child").css("background","red");
+   });
+
+</script>
+</html>

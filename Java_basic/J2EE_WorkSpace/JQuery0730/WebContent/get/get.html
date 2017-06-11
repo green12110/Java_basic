@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- 引入jquery -->
+<script type="text/javascript" src="../jquery/jquery-1.7.2.js"></script>
+</head>
+<body>
+<form action="" name="form1" id="form1">
+		<input type="text" name="username" id="username" value="zhang">
+		<br> <input type="text" name="psw" id="psw" value="99999">
+		<br> <input type="button" id="b1" value="登陆">
+	</form>
+	<div id="one"></div>
+</body>
+<script type="text/javascript">
+
+  /*  $("#b1").click(function(){
+	   var url ="get01.jsp";
+	   var param = {
+			  username:$("#username").val(),
+			  psw:$("#psw").val()
+	   }
+	   var xmlHttpRequest = 
+		   $.get(url,param,function(data,textStatus){
+		   //alert(data);
+		   $("#one").text(data);
+		   alert(textStatus);  //succuss
+	   });
+	   
+	  // alert(xmlHttpRequest.status+" "+xmlHttpRequest.readyState);
+   }); */
+   
+   $("#b1").click(function(){
+	   var url = "get01.jsp";
+	   //.serialize() 方法可以操作已选取个别表单元素的 jQuery 对象，比如 <input>, <textarea> 以及 <select>。
+	   //不过，选择 <form> 标签本身进行序列化一般更容易些：
+	   var param = $("#form1").serialize();
+	   $.post(url,param,function(data,textStatus){
+		   $("#one").text(data);
+	   });
+   });
+
+/* 
+// *  $.get("get.jsp",function(data,textStatus){});
+// *    * 通过远程 HTTP GET 请求载入信息。
+// *    * 参数1:请求的url
+// *    * 参数2:发送到服务器的数据.格式:{key01:vlaue01,key02:vlaue02}
+// *    * 回调函数:function(data,textStatus)
+// *          * data:服务器返回的数据
+// *          * textStatus:代表请求状态, 其值可能为: succuss, error, notmodify, timeout 4 种.
+// *    * 方法的返回值是xmlHttpRequest对象
+// */
+</script>
+</html>

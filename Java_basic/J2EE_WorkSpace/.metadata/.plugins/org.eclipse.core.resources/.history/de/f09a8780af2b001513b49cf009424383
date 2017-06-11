@@ -1,0 +1,11 @@
+package cn.selfdefine.action;
+
+import com.opensymphony.xwork2.ActionContext;
+
+public class IndexAction1 {
+	public String execute(){
+		ActionContext.getContext();
+		return "success";
+	}
+
+}

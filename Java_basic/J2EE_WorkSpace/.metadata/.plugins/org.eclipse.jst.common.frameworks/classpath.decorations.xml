@@ -1,0 +1,25 @@
+<classpath>
+  <container id="ihome!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="D:/mingri/source/ihome/WebContent/WEB-INF/lib/spring-webmvc-3.2.0.RELEASE.jar">
+      <source-attachment-path>D:/mingri/source/ihome/WebContent/WEB-INF/lib/spring-webmvc-3.2.3.RELEASE-sources.jar</source-attachment-path>
+    </entry>
+    <entry id="D:/mingri/source/ihome/WebContent/WEB-INF/lib/spring-web-3.2.0.RELEASE.jar">
+      <source-attachment-path>/ihome/WebContent/WEB-INF/lib/spring-web-3.2.3.RELEASE-sources.jar</source-attachment-path>
+    </entry>
+    <entry id="D:/mingri/source/ihome/WebContent/WEB-INF/lib/spring-beans-3.2.0.RELEASE.jar">
+      <source-attachment-path>D:/mingri/source/ihome/WebContent/WEB-INF/lib/spring-beans-3.2.3.RELEASE-sources.jar</source-attachment-path>
+    </entry>
+    <entry id="D:/mingri/source/ihome/WebContent/WEB-INF/lib/c3p0-0.9.2-pre8.jar">
+      <source-attachment-path>D:/mingri/source/ihome/WebContent/WEB-INF/lib/c3p0-0.9.2-pre8.jar</source-attachment-path>
+    </entry>
+  </container>
+  <container id="Struts2Demo!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="D:/J2EE_WorkSpace/Struts2Demo/WebContent/WEB-INF/lib/xwork-core-2.1.6.jar">
+      <source-attachment-path>F:/02doc/struts2/xwork-assembly-2.1.6-all/xwork-2.1.6/core/src/main</source-attachment-path>
+    </entry>
+    <entry id="D:/J2EE_WorkSpace/Struts2Demo/WebContent/WEB-INF/lib/struts2-core-2.1.8.1.jar">
+      <source-attachment-path>F:/02doc/struts2/struts-2.1.8.1-all/struts-2.1.8.1/src/core/src/main</source-attachment-path>
+      <attribute name="javadoc_location">file:/F:/02doc/struts-2.1.8.1-all/struts-2.1.8.1/docs/struts2-core/apidocs/</attribute>
+    </entry>
+  </container>
+</classpath>

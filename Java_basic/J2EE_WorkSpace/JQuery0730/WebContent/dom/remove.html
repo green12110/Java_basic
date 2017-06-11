@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+		 	div,span{
+			    width: 140px;
+			    height: 140px;
+			    margin: 20px;
+			    background: #9999CC;
+			    border: #000 1px solid;
+				float:left;
+			    font-size: 17px;
+			    font-family:Roman;
+			}
+			
+			div.mini{
+			    width: 30px;
+			    height: 30px;
+			    background: #CC66FF;
+			    border: #000 1px solid;
+			    font-size: 12px;
+			    font-family:Roman;
+			}
+			
+			div.visible{
+				display:none;
+			}
+	 </style>
+	 <!--引入jquery的js库-->
+    <script type="text/javascript" src="../jquery/jquery-1.7.2.js"></script>
+	</head>
+	 
+	<body>
+		 <ul id="city">
+		 	 <li id="bj" name="beijing">北京</li>
+			 <li id="tj" name="tianjin">天津</li>
+			 <li id="cq" name="chongqing">重庆</li>
+		 </ul>
+		<p class="hello">Hello</p> how are <p>you?</p>   
+	</body>
+	<script type="text/javascript">
+	  /*
+	    remove(): 从 DOM 中删除所有匹配的元素, 传入的参数用于根据 jQuery 表达式来筛选元素. 
+	           当某个节点用 remove() 方法删除后, 该节点所包含的所有后代节点将被同时删除. 
+	           这个方法的返回值是一个指向已被删除的节点的引用.
+	  */
+	  //删除<li id="bj" name="beijing">北京</li>
+	  //$("#bj").remove();
+	  //删除所有的子节点   清空元素中的所有后代节点(不包含属性节点)
+	  $("#city").remove();
+	  
+	  alert( $("#city").attr("id"));   //undefined
+
+	</script>
+</html>

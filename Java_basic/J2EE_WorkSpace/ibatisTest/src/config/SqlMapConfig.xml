@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMapConfig  PUBLIC "-//ibatis.apache.org//DTD SQL Map Config 2.0//EN"   
+  "http://ibatis.apache.org/dtd/sql-map-config-2.dtd" >
+
+<sqlMapConfig>
+
+	<properties resource="config/db.properties" />
+	<settings useStatementNamespaces="true" />
+	<transactionManager type="JDBC">   <!-- 定义了ibatis的事务管理器有3中（JDBC,JTA,EXTERNAL） -->
+		<dataSource type="SIMPLE">   <!-- type属性指定了数据源的链接类型，也有3种类型(SIMPLE,DBCP,JNDI) -->
+			<property name="JDBC.Driver" value="${driver}"/>
+			<property name="JDBC.ConnectionURL" value="${url}" />
+			<property name="JDBC.Username" value="${username}" />
+			<property name="JDBC.Password" value="${password}" />
+		</dataSource>
+
+	</transactionManager>
+
+	<sqlMap resource="com/test/Student.xml" />
+
+</sqlMapConfig>

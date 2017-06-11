@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../jquery/jquery-1.7.2.js"></script>
+
+</head>
+<body>
+<input type="checkbox" value="篮球"/>篮球
+<input type="checkbox" value="排球"/>排球
+<input type="checkbox" value="羽毛球"/>羽毛球
+<input type="checkbox" value="乒乓球"/>乒乓球
+<input type="button" id="b1" value="选中的个数" />
+</body>
+<script type="text/javascript" >
+    $("#b1").click(function(){
+    	//var $items = $(":checkbox");
+    	//alert($items.length);
+    	alert($("input[type='checkbox']").length);
+    });
+</script>
+</html>
